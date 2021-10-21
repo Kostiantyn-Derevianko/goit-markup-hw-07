@@ -1,0 +1,30 @@
+/*-------НАШИ ОСОБЕННОСТИ------- */
+.feature-list {
+  display: flex;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-box {
+  display: flex;
+
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--backgr-btn-color);
+  align-items: center;
+  justify-content: center;
+}
+.feature-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,34 @@
+/*-------ЧЕМ ЗАНИМАЕМСЯ------- */
+.activity-list {
+  display: flex;
+}
+.activity-item {
+  position: relative;
+}
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+.activity-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.activity-text {
+  position: absolute;
+  bottom: 0;
+  padding: 27px 0px;
+  width: 100%;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+  background: rgba(47, 48, 58, 0.8);
+}

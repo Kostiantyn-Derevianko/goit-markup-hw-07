@@ -1,0 +1,88 @@
+/*-------------- HEADER-------------- */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+/* Основной цвет логотипа */
+.header-logo {
+  margin-right: 93px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/* Красит часть логотипа в синий цвет в хидере и футере*/
+.web-logo {
+  color: var(--accent-color);
+}
+/* элементы навигации в хидере студии*/
+.nav-list {
+  display: flex;
+}
+.nav-link {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+.nav-link.current::after {
+  display: block;
+  position: absolute;
+  bottom: -32px;
+
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  pointer-events: none;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
