@@ -10,14 +10,15 @@
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-/* стиль для спрятанной модалки */
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* стиль для спрятанной модалки */
+    .modal {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
 }
 .modal {
   position: absolute;
@@ -39,6 +40,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   justify-content: center;
@@ -51,10 +53,11 @@
   background-color: var(--white-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-}
-.close-btn:hover,
-.close-btn:focus {
-  background-color: var(--button-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-color);
+  }
 }
 .modal-svg {
   fill: currentColor;
@@ -89,14 +92,11 @@
   outline: none;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input:hover,
-.input:focus {
-  border-color: var(--accent-color);
-}
-.input:hover + .input-icon,
-.input:focus + .input-icon {
-  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 .modal-input {
   padding-left: 40px;
@@ -107,12 +107,13 @@
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
-}
-.modal-text-input::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .check-text {
   position: relative;
@@ -141,11 +142,14 @@
   border-radius: 2px;
   margin-right: 8px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-checkbox:checked + .custom-box {
-  background-color: var(--accent-color);
-  border: none;
+.modal-checkbox {
+  &:checked + .custom-box {
+    background-color: var(--button-accent-color);
+    border-color: var(--button-accent-color);
+  }
 }
 .input-wrapper {
   position: relative;
@@ -159,6 +163,11 @@
   pointer-events: none;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .input:hover + &,
+  .input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 .modal-btn {
   display: block;

@@ -2,8 +2,10 @@
 .feature-list {
   display: flex;
 }
-.feature-item:not(:last-child) {
-  margin-right: 30px;
+.feature-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .feature-box {
   display: flex;

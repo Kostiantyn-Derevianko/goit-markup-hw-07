@@ -1,0 +1,15 @@
+/* Основной цвет логотипа */
+.header-logo {
+  margin-right: 93px;
+
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/* Красит часть логотипа в синий цвет в хидере и футере*/
+.web-logo {
+  color: var(--accent-color);
+}

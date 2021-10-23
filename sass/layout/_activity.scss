@@ -4,9 +4,9 @@
 }
 .activity-item {
   position: relative;
-}
-.activity-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .activity-title {
   margin-bottom: 50px;

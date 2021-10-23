@@ -10,15 +10,17 @@
   padding-top: 60px;
   margin-bottom: 20px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--raleway);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--white-text-color);
 }
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .footer-list {
   padding-bottom: 60px;
@@ -29,13 +31,15 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.footer-link.adr {
-  color: var(--white-text-color);
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &.adr {
+    color: var(--white-text-color);
+  }
 }
 .footer-middle {
   padding-top: 72px;
@@ -53,8 +57,10 @@
 .footer-social-list {
   display: flex;
 }
-.footer-social-item:not(:last-child) {
-  margin-right: 10px;
+.footer-social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .footer-social-link {
   display: flex;
@@ -62,18 +68,17 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--white-text-color);
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
-}
-.footer-social-link {
-  color: var(--white-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .social-icon {
   fill: currentColor;
@@ -108,20 +113,23 @@
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.email-input:hover,
-.email-input:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px 0px var(--accent-color);
-}
-.email-input::placeholder {
-  font-size: 16px;
-  line-height: calc(20 / 16);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.email-input:focus::placeholder {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus::placeholder {
+    color: var(--accent-color);
+  }
 }
 .footer-btn {
   padding: 10px 62px 10px 29px;
