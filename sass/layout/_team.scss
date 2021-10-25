@@ -1,12 +1,12 @@
 /*-------НАША КОМАНДА------- */
 .team {
-  background-color: var(--backgr-btn-color);
+  background-color: $backgr-btn-color;
 }
-.team-list {
+.team__list {
   display: flex;
   padding-top: 0px;
 }
-.team-item {
+.team__item {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -16,12 +16,12 @@
     margin-right: 30px;
   }
 }
-.team-content {
+.team__content {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
-.team-title {
+.team__title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -29,7 +29,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-title-name {
+.team__title-name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -37,30 +37,30 @@
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
 }
-.team-text {
+.team__text {
   margin-bottom: 16px;
 
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
 }
-.team-icon-list {
+.icon-list {
   padding: 0;
   display: flex;
   justify-content: center;
 }
-.team-icon-item {
+.icon-list__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.team-icon-link {
+.icon-list__link {
   display: flex;
 
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);
+  color: $icon-color;
   justify-content: center;
   align-items: center;
 
@@ -70,10 +70,10 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
+    background-color: $accent-color;
+    color: $white-text-color;
   }
 }
-.team-icon {
+.icon-list__icon {
   fill: currentColor;
 }

@@ -17,7 +17,7 @@
   background-position: center;
   background-size: cover;
 }
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -26,9 +26,9 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 /* Кнопка героя */
-.hero-btn {
+.hero__btn {
   padding: 8px 30px;
 }

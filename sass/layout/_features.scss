@@ -1,23 +1,23 @@
 /*-------НАШИ ОСОБЕННОСТИ------- */
-.feature-list {
+.feature__list {
   display: flex;
 }
-.feature-item {
+.feature__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.feature-box {
+.feature__box {
   display: flex;
 
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--backgr-btn-color);
+  background-color: $backgr-btn-color;
   align-items: center;
   justify-content: center;
 }
-.feature-title {
+.feature__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -25,7 +25,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.feature-text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

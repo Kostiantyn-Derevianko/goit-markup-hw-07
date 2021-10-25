@@ -2,30 +2,18 @@
 .footer {
   background-color: #2f303a;
 }
-.footer-sides {
+.footer__sides {
   display: flex;
 }
-.footer-logo {
-  display: block;
-  padding-top: 60px;
-  margin-bottom: 20px;
-
-  font-family: var(--raleway);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--white-text-color);
-}
-.footer-item {
+.footer__item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
-.footer-list {
+.footer__list {
   padding-bottom: 60px;
 }
-.footer-link {
+.footer__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -34,41 +22,41 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   &.adr {
-    color: var(--white-text-color);
+    color: $white-text-color;
   }
 }
-.footer-middle {
+.footer__middle {
   padding-top: 72px;
   margin-left: 70px;
 }
-.footer-middle-title {
+.footer__middle-title {
   margin-bottom: 20px;
 
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
-.footer-social-list {
+.footer__soc-list {
   display: flex;
 }
-.footer-social-item {
+.footer__soc-item {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.footer-social-link {
+.footer__soc-link {
   display: flex;
 
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--white-text-color);
+  color: $white-text-color;
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
@@ -77,17 +65,17 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
-.social-icon {
+.footer__soc-icon {
   fill: currentColor;
 }
-.footer-right {
+.footer__right {
   padding-top: 72px;
   margin-left: 93px;
 }
-.footer-label {
+.footer__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -97,7 +85,7 @@
   line-height: calc (16 /14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 .email-input {
   padding-left: 16px;
@@ -109,15 +97,15 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   outline: none;
-  color: var(--white-text-color);
+  color: $white-text-color;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
-    box-shadow: 0px 4px 4px 0px var(--accent-color);
+    border-color: $accent-color;
+    box-shadow: 0px 4px 4px 0px $accent-color;
   }
 
   &::placeholder {
@@ -128,17 +116,17 @@
   }
 
   &:focus::placeholder {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
-.footer-btn {
+.footer__btn {
   padding: 10px 62px 10px 29px;
 }
-.footer-btn-wrapper {
+.footer__btn-wrapper {
   position: relative;
   margin-left: 12px;
 }
-.send-icon {
+.footer__send-icon {
   position: absolute;
   top: 50%;
   right: 28px;

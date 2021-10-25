@@ -1,5 +1,5 @@
 /*---ПОСТОЯННЫЕ КЛИЕНТЫ---*/
-.client-title {
+.client__title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -7,22 +7,22 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.client-list {
+.client__list {
   display: flex;
 }
-.client-item {
+.client__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.client-box-link {
+.client__box-link {
   display: flex;
 
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  color: var(--icon-color);
+  color: $icon-color;
   align-items: center;
   justify-content: center;
 
@@ -31,10 +31,10 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: $accent-color;
+    border-color: $accent-color;
   }
 }
-.client-icon {
+.client__icon {
   fill: currentColor;
 }

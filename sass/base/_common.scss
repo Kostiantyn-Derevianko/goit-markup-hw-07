@@ -1,6 +1,6 @@
 body {
-  font-family: var(--roboto);
-  color: var(--main-text-color);
+  font-family: $roboto;
+  color: $main-text-color;
   background-color: #ffffff;
 }
 /* Убираем точки перед списком */
@@ -13,17 +13,17 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* основной цвет текста */
-.feature-title,
-.activity-title,
-.team-title,
-.team-title-name,
-.work-title {
-  color: var(--main-text-color);
+.feature__title,
+.activity__title,
+.team__title,
+.team__title-name,
+.work-list__title {
+  color: $main-text-color;
 }
 /* вторичный цвет текста */
-.contact-link,
-.feature-text,
-.team-text,
-.work-text {
-  color: var(--secondary-text-color);
+.contact__link,
+.feature__text,
+.team__text,
+.work-list__text {
+  color: $secondary-text-color;
 }
