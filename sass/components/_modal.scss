@@ -130,6 +130,7 @@
 }
 .checkbox__link {
   color: $accent-color;
+  text-decoration: underline;
 }
 .checkbox__custom {
   display: flex;
@@ -168,9 +169,4 @@
   .form__input:focus + & {
     fill: $accent-color;
   }
-}
-.checkbox__btn {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 56px;
 }

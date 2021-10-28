@@ -1,9 +1,9 @@
 /*----------- HERO------------- */
-.hero {
+.hero__container {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
+  width: 1600px;
   text-align: center;
 
   background-color: #c4c4c4;
@@ -27,8 +27,4 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white-text-color;
-}
-/* Кнопка героя */
-.hero__btn {
-  padding: 8px 30px;
 }

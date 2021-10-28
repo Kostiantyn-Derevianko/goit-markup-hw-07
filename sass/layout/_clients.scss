@@ -1,21 +1,13 @@
 /*---ПОСТОЯННЫЕ КЛИЕНТЫ---*/
-.client__title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.client__list {
+.clients {
   display: flex;
 }
-.client__item {
+.clients__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.client__box-link {
+.clients__link {
   display: flex;
 
   width: 170px;
@@ -35,6 +27,6 @@
     border-color: $accent-color;
   }
 }
-.client__icon {
+.clients__icon {
   fill: currentColor;
 }

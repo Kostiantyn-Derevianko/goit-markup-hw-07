@@ -1,8 +1,8 @@
 /*-------НАША КОМАНДА------- */
-.team {
+.section--other-background {
   background-color: $backgr-btn-color;
 }
-.team__list {
+.team {
   display: flex;
   padding-top: 0px;
 }
@@ -22,14 +22,6 @@
   text-align: center;
 }
 .team__title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.team__title-name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -44,17 +36,17 @@
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
 }
-.icon-list {
+.socials {
   padding: 0;
   display: flex;
   justify-content: center;
 }
-.icon-list__item {
+.socials__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.icon-list__link {
+.socials__link {
   display: flex;
 
   width: 44px;
@@ -74,6 +66,6 @@
     color: $white-text-color;
   }
 }
-.icon-list__icon {
+.socials__icon {
   fill: currentColor;
 }

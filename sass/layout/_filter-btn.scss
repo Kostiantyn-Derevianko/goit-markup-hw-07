@@ -1,15 +1,15 @@
 /*---КНОПКИ ФИЛЬТРОВ В ПОРТФОЛИО---*/
-.filter-list {
+.filter {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-.filter-list__item {
+.filter__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
-.filter-list__btn {
+.filter__btn {
   padding: 4px 20px;
 
   font-family: inherit;
@@ -36,7 +36,7 @@
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   }
 
-  &_current {
+  &--current {
     color: $white-text-color;
     background-color: $accent-color;
   }

@@ -20,4 +20,18 @@
     color: $main-text-color;
     background-color: $button-accent-color;
   }
+  /* Кнопка героя */
+  &--hero-btn {
+    padding: 8px 30px;
+  }
+  /* Кнопка модалки */
+  &--checkbox-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 56px;
+  }
+  /* Кнопка футтера */
+  &--footer-btn {
+    padding: 10px 62px 10px 29px;
+  }
 }

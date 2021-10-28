@@ -1,5 +1,5 @@
 /*-------ЧЕМ ЗАНИМАЕМСЯ------- */
-.activity__list {
+.activity {
   display: flex;
 }
 .activity__item {
@@ -7,14 +7,6 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-.activity__title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 .activity__text {
   position: absolute;

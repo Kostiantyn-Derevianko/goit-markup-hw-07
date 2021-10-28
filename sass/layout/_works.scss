@@ -1,17 +1,17 @@
 /*--------ПРИМЕРЫ РАБОТ ПОРТФОЛИО------ */
-.work-list {
+.work {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * #{$card-set-gap});
   margin-top: calc(-1 * #{$card-set-gap});
 }
-.work-list__item {
+.work__item {
   flex-basis: calc(100% / 3 - #{$card-set-gap});
   margin-left: $card-set-gap;
   margin-top: $card-set-gap;
   border: 1px solid #eeeeee;
 }
-.work-list__link {
+.work__link {
   display: block;
 
   &:hover,
@@ -20,11 +20,11 @@
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
 }
-.work-list__thumb {
+.work__thumb {
   position: relative;
   overflow: hidden;
 }
-.work-list__overlay_text {
+.work__overlay-text {
   display: flex;
   align-items: center;
   padding: 0 24px;
@@ -43,22 +43,22 @@
   letter-spacing: 0.03em;
   color: $white-text-color;
 
-  .work-list__link:hover &,
-  .work-list__link:focus & {
+  .work__link:hover &,
+  .work__link:focus & {
     transform: translateY(0%);
   }
 }
-.work-list__content {
+.work__content {
   padding: 20px 24px;
 }
-.work-list__title {
+.work__title {
   margin-bottom: 4px;
 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.work-list__text {
+.work__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

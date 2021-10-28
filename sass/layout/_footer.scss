@@ -2,7 +2,7 @@
 .footer {
   background-color: #2f303a;
 }
-.footer__sides {
+.footer__container {
   display: flex;
 }
 .footer__item {
@@ -25,7 +25,7 @@
     color: $accent-color;
   }
 
-  &.adr {
+  &--adr {
     color: $white-text-color;
   }
 }
@@ -118,9 +118,6 @@
   &:focus::placeholder {
     color: $accent-color;
   }
-}
-.footer__btn {
-  padding: 10px 62px 10px 29px;
 }
 .footer__btn-wrapper {
   position: relative;
